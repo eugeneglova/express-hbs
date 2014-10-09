@@ -1,8 +1,10 @@
 var express = require('express');
 var app = express();
-var expressHbs = require('express3-handlebars');
+var exphbs = require('express-handlebars');
 
-app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'main.hbs'}));
+var hbs = exphbs.create();
+
+app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 
 app.get('/', function(req, res){

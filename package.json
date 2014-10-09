@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A Node.js App using express",
   "dependencies": {
-    "express": "*",
-    "express3-handlebars": "*"
+    "express": "4",
+    "express-handlebars": "*"
    },
   "engine": "node >=0.6.x"
 }
